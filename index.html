@@ -11,12 +11,51 @@
     <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- Foundation CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
-    
+    <style>
+        /* Custom styles */
+        .hero {
+            position: relative;
+            height: 60vh; /* Adjust height as needed */
+            background-image: url('images/froast1.jpeg'); /* Path to your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Text color */
+            text-align: center;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff; /* Text color */
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 3rem; /* Adjust font size */
+            margin-bottom: 1rem;
+        }
+        .hero-content p {
+            font-size: 1.5rem; /* Adjust font size */
+            margin-bottom: 2rem;
+        }
+        .hero-content .btn {
+            background-color: transparent; /* Transparent background */
+            color: #ffffff; 
+            border: 1px solid transparent; /* Transparent border */
+            padding: 8px 16px; /* Adjust padding */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        }
+        .hero-content .btn:hover {
+            background-color: rgba(255, 165, 0, 0.8); /* Orange background on hover */
+            border-color: transparent; /* Transparent border on hover */
+            color: #fff; /* White text on hover */
+        }
+    </style>
 </head>
 <body>
 
@@ -24,15 +63,15 @@
     <nav class="navbar is-transparent">
         <div class="container">
             <div class="navbar-brand">
-                <a href="#" class="navbar-item">Innovative Tools Hub</a>
+                <a href="index.html" class="navbar-item">Innovative Tools Hub</a>
             </div>
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
-                    <a href="#" class="navbar-item">Home</a>
-                    <a href="#" class="navbar-item">About Us</a>
-                    <a href="#" class="navbar-item">Services</a>
-                    <a href="#" class="navbar-item">Blog</a>
-                    <a href="#" class="navbar-item">Contact</a>
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="about.html" class="navbar-item">About Us</a>
+                    <a href="services.html" class="navbar-item">Services</a>
+                    <a href="blog.html" class="navbar-item">Blog</a>
+                    <a href="contact.html" class="navbar-item">Contact</a>
                 </div>
             </div>
         </div>
@@ -43,12 +82,10 @@
         <div class="hero-content">
             <h1>Welcome to Innovative Tools Hub</h1>
             <p>Engineering and tech firm with the future in mind.</p>
-            <img src="background.jpg" alt="Background Image" class="hero-image">
-            <a href="#" class="btn">Get Started</a>
+            <a href="about.html" class="btn">Get Started</a>
         </div>
     </section>
     
-
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     

@@ -7,48 +7,66 @@
 /* styles.css */
 /* Example of moving inline styles to external CSS */
 /* Custom styles */
-.navbar {
-    background-color: rgba(248, 249, 250, 0.8); /* Light gray background with transparency */
-}
-.navbar-brand {
-    font-size: 1.2rem;
-    margin-right: 2rem;
-}
+/* Reset default margin and padding */
+/* Custom styles */
 .hero {
-    height: 100vh;
+    position: relative;
+    height: 60vh; /* Adjust height as needed */
+    background-image: url('images/froast1.jpeg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff; /* Text color */
     text-align: center;
-    background-image: url('path/to/your/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #333;
-    position: relative;
 }
+
 .hero-content {
-    max-width: 600px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for text */
-    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    text-align: center;
 }
-.hero h1 {
-    font-size: 3rem;
+
+.hero-content h1 {
+    font-size: 3rem; /* Adjust font size */
     margin-bottom: 1rem;
 }
-.hero p {
-    font-size: 1.5rem;
+
+.hero-content p {
+    font-size: 1.5rem; /* Adjust font size */
     margin-bottom: 2rem;
 }
-.btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+
+.hero-content .btn {
+    background-color: transparent; /* Transparent background */
+    color: #ffffff;
+    border: 1px solid transparent; /* Transparent border */
     padding: 10px 20px;
-    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
-.btn:hover {
-    background-color: #0056b3;
+
+.hero-content .btn:hover {
+    background-color: rgb(255, 255, 255); /* Transparent orange background on hover */
+    border-color: transparent; /* Transparent border on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
 }
